@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4671626824467405991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4671626824467405993}
+  - component: {fileID: 4671626824467405994}
+  - component: {fileID: 4671626824467405992}
+  - component: {fileID: 4671626824467405995}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4671626824467405993
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4671626824467405991}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4671626824467405994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4671626824467405991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd4162bd2e927144dbe7c7c635480b04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  problems:
+  - firstNumber: 1
+    secondNumber: 2
+    operation: 0
+    answers:
+    - 4
+    - 2
+    - 5
+    - 3
+    correctTube: 3
+  - firstNumber: 4
+    secondNumber: 3
+    operation: 1
+    answers:
+    - 4
+    - 2
+    - 1
+    - 3
+    correctTube: 2
+  - firstNumber: 3
+    secondNumber: 2
+    operation: 2
+    answers:
+    - 4
+    - 5
+    - 8
+    - 6
+    correctTube: 3
+  - firstNumber: 6
+    secondNumber: 2
+    operation: 3
+    answers:
+    - 4
+    - 3
+    - 2
+    - 6
+    correctTube: 1
+  curProblem: 0
+  timePerProblem: 10
+  remainingTime: 10
+  player: {fileID: 0}
+  CorrectSound: {fileID: 8300000, guid: 3759caa810a0df34caa51ccbaf6869aa, type: 3}
+  WinSound: {fileID: 8300000, guid: 43efb9ccd67e4144794547be0613a68d, type: 3}
+  LoseSound: {fileID: 8300000, guid: 36a432be3957f8b4fb7a4f5f3c1bfc02, type: 3}
+--- !u!114 &4671626824467405992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4671626824467405991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 116d1c7702b6dd142bb63657f9104ce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacles:
+  - {fileID: 2232772890622447574, guid: 4f0c864e91d75af46aa7e56780e7cd8d, type: 3}
+  - {fileID: 1370720385593466, guid: f25179896ed72344e88310a4712afb33, type: 3}
+  - {fileID: 1082054553790498, guid: da1ee02e13357424ea5cd1486126bf66, type: 3}
+  - {fileID: 1312814053927234, guid: ce6ddb58e3bef5548a8b1b0939d416c3, type: 3}
+  minSpawnY: -3.45
+  maxSpawnY: 0.9
+  spawnRate: 2
+--- !u!114 &4671626824467405995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4671626824467405991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24d95a85fd427d4469c8f09d657d2e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  problemText: {fileID: 0}
+  answersTexts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  remainingTimeDial: {fileID: 0}
+  endText: {fileID: 0}
+  Blackscreen: {fileID: 0}
+  BsSpeed: 0.04
